@@ -1,0 +1,108 @@
+/* Global Styles */
+body {
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #333;
+}
+
+.navbar-brand, .nav-link {
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+.navbar-brand {
+    font-size: 1.7rem;
+}
+
+.nav-link:hover, .nav-link:focus {
+    color: #fff;
+    border-left: 2px solid #fff;
+}
+
+/* Carousel */
+.carousel-item {
+    height: 100vh;
+}
+
+.carousel-inner {
+    height: 70vh;
+}
+
+.carousel-center {
+    top: 35%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    transform: translate(-50%, -50%);
+}
+
+.carousel-item {
+    height: 100vh;
+}
+
+.carousel-inner {
+    height: 70vh;
+}
+
+.img {
+    margin-top: -80px;
+    z-index: 3;
+}
+
+/* Card Styles */
+.card {
+    margin-top: 15vh;
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .navbar {
+        background-color: #444; /* Slightly different color on mobile */
+    }
+
+    .nav-link {
+        font-size: 1.1rem; /* Smaller font size for mobile */
+    }
+
+    .navbar-brand {
+        font-size: 1.5rem; /* Smaller font size for mobile */
+    }
+
+    .carousel-item {
+        height: 60vh; /* Adjust carousel height on smaller screens */
+    }
+
+    .carousel-inner {
+        height: 50vh; /* Adjust inner height for mobile */
+    }
+
+    .img {
+        margin-top: -60px; /* Adjust image margin for mobile */
+    }
+
+    .card {
+        margin-top: 10vh; /* Reduce margin for cards on mobile */
+    }
+}
+
+@media (max-width: 576px) {
+    .nav-link {
+        font-size: 1rem; /* Even smaller font size for extra small devices */
+    }
+
+    .navbar-brand {
+        font-size: 1.3rem; /* Further reduce brand size */
+    }
+}

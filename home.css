@@ -1,0 +1,278 @@
+        /* Global Styles */
+        body {
+          background-color: #fff;
+      }
+
+      .navbar{
+        background-color: #333;
+      }
+
+      .nav-link{
+        color: #fff;
+        font-size: 1.3rem;
+      }
+
+      .navbar-brand{
+        color: #fff;
+        font-size: 1.7rem;
+      }
+      /* Navbar Link Focus State */
+      .nav-link:focus {
+          color: #fff;
+          border-left: 2px solid #fff;
+      }
+
+      /* Carousel Adjustments */
+      .carousel-item {
+          height: 80vh; 
+          position: relative; 
+      }
+
+      .carousel-item img {
+          width: 100%; 
+          height: 100vh; 
+          object-fit: cover; 
+      }
+
+      /* Carousel Caption */
+      .carousel-caption {
+          position: absolute;
+          top: 50%; 
+          transform: translateY(-50%);
+          text-align: center;
+          width: 70%;
+          color: #fff;
+      }
+
+      .carousel-caption h1 {
+          font-size: 3rem;
+          font-weight: 700;
+      }
+
+      .carousel-caption p {
+          font-size: 1.2rem;
+      }
+
+      /* Responsive Adjustments for Carousel */
+      @media (max-width: 768px) {
+          .carousel-item {
+              height: 60vh; /* Reduce height for smaller screens */
+          }
+
+          .carousel-item img {
+              height: 60vh; /* Ensure the image fits smaller screens */
+          }
+
+          .carousel-caption h1 {
+              font-size: 2rem; /* Smaller text for mobile and tablet */
+          }
+
+          .carousel-caption p {
+              font-size: 1rem;
+          }
+
+          .carousel-caption {
+              top: 40%; /* Adjust text positioning */
+          }
+      }
+
+      @media (max-width: 576px) {
+          .carousel-item {
+              height: 50vh; /* Further reduce height on small screens */
+          }
+
+          .carousel-item img {
+              height: 50vh;
+          }
+
+          .carousel-caption h1 {
+              font-size: 1.5rem;
+          }
+
+          .carousel-caption p {
+              font-size: 0.9rem;
+          }
+      }
+
+      /* Parallax Section */
+      .parallax-1, .parallax-2 {
+          height: 30vh;
+          background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+      }
+
+      /* Fix background-attachment issue on mobile */
+      @media (max-width: 768px) {
+          .parallax-1, .parallax-2 {
+              background-attachment: scroll;
+              min-height: 200px; 
+          }
+      }
+
+      /* Parallax Backgrounds */
+      .parallax-1 {
+          background-image: url("Images/lights.jpg");
+        }
+        
+        .parallax-2 {
+          background-image: url("Images/media.jpg");
+      }
+
+      /* Icon and Features Section */
+      .bi {
+          font-size: 2.5rem;
+          color: #333;
+      }
+
+      /* Responsive icon sizes */
+      @media (max-width: 576px) {
+          .bi {
+              font-size: 1.8rem;
+          }
+      }
+
+      /* Button Styling */
+      .bt {
+          background-color: #333;
+          color: white;
+          border-radius: 5px;
+          padding: 10px 20px;
+          text-transform: uppercase;
+          font-weight: bold;
+      }
+
+      /* Adjust button padding on smaller screens */
+      @media (max-width: 576px) {
+          .bt {
+              padding: 8px 16px;
+          }
+      }
+
+      /* Info Section */
+      #info {
+          padding: 50px 0;
+          margin-top: 15vh;
+      }
+
+      #info img {
+          max-width: 40%;
+          height: auto;
+          border-radius: 10px;
+          display: flex;
+      }
+
+      #info h2 {
+          font-size: 2rem;
+          font-weight: bold;
+          margin-bottom: 20px;
+      }
+
+      #info p{
+        display: flex;
+        justify-content: end;
+        align-items: end;
+      }
+
+      /* Adjust for smaller screens */
+      @media (max-width: 768px) {
+          #info h3 {
+              font-size: 1.5rem;
+          }
+
+          #info img {
+              max-height: 40vh; 
+          }
+      }
+
+      /* Gallery Section */
+      .gallery h1 {
+        margin-top: 15vh;
+      }
+      .gallery img {
+          width: 100%;
+          height: auto;
+          transition: transform 0.2s;
+          margin-top: 15vh;
+      }
+
+      .gallery img:hover {
+          transform: scale(1.05); 
+      }
+
+      /* Footer and Newsletter Section */
+      footer {
+          padding: 20px 0;
+          background-color: black;
+      }
+
+      footer p {
+          margin: 0;
+          font-size: 16px;
+          color: #fff;
+      }
+
+      footer a {
+          color: #f44336;
+          text-decoration: none;
+      }
+
+      footer a:hover {
+          text-decoration: none;
+          color: #fff;
+      }
+
+      /* Responsive footer padding */
+      @media (max-width: 768px) {
+          footer {
+              padding: 15px 0;
+          }
+
+          footer p {
+              font-size: 14px;
+          }
+      }
+
+      /* Newsletter Section */
+      .newsletter{
+        background-color: #333;
+        max-width: 206vh;
+        margin-top: 15vh;
+      }
+
+      .newsletter h2{
+        color: #fff;
+        margin-bottom: 5vh;
+      }
+      .newsletter input[type="email"] {
+          width: 40%;
+          padding: 10px;
+          border: none;
+          border-radius: 3px;
+          margin-bottom: 5vh;
+      }
+
+      .newsletter button {
+          padding: 10px 20px;
+          background-color: #f44336;
+          color: #fff;
+          border: none;
+          border-radius: 3px;
+          cursor: pointer;
+      }
+
+      .newsletter button:hover {
+          background-color: #d32f2f;
+      }
+
+      /* Media Query for Newsletter Layout */
+      @media (max-width: 576px) {
+          .newsletter input[type="email"] {
+              margin-bottom: 10px;
+          }
+
+          .newsletter button {
+              width: 100%; /* Button takes full width on small screens */
+          }
+      }
